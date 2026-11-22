@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Deployed or installed code that ships its lockfiles: re-resolve transitives weekly.",
+  "extends": ["local>bendrucker/renovate-config"],
+  "lockFileMaintenance": { "enabled": true, "automerge": true }
+}

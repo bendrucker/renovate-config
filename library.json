@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Published libraries and modules: consumers resolve their own ranges, so widen and skip lock maintenance.",
+  "extends": ["local>bendrucker/renovate-config"],
+  "rangeStrategy": "widen"
+}
