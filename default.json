@@ -4,6 +4,11 @@
   "extends": ["config:recommended"],
   "packageRules": [
     { "matchUpdateTypes": ["minor", "patch", "pin", "digest"], "automerge": true },
-    { "matchUpdateTypes": ["major"], "automerge": false }
+    { "matchUpdateTypes": ["major"], "automerge": false },
+    {
+      "description": "Own packages ship from repos we control, so a release-age wait only delays them.",
+      "matchPackageNames": ["@bendrucker/**"],
+      "minimumReleaseAge": null
+    }
   ]
 }
